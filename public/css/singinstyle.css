@@ -1,0 +1,78 @@
+body{
+    background-size: cover;
+    background-color:honeydew;
+}
+.left-container {
+    width: 50%;
+    float: left;
+    font-family: cursive;
+}
+.right-container {
+    width: 50%;
+    float: right;
+    font-family: cursive;
+}
+.signincontainer {
+    padding: 200px;
+    font-size: 35px;
+    padding-right: 100px;
+}
+
+/* CSS */
+.button-36 {
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: cursive;
+  font-size: 30px;
+  font-weight: 500;
+  height: 4rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-36:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+  .button-36 {
+    padding: 0 2.6rem;
+  }
+}
+.sign2, .sign4{
+    border-radius: 5%;
+    width: 400px;
+}
+.sign5   {
+    padding-left: 130px;
+    padding-right: 130px;
+}
+.logo {
+    padding:4%;
+}
+.accheader {
+    padding: 4%;
+    font-size:60px;
+    line-height: 4rem;
+}
+.head2 {
+    padding:4%;
+    font-size:25px;    
+    font-family: cursive;
+}
+.sign {
+    align-content: center;
+    display: block;
+}
