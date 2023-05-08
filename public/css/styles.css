@@ -85,18 +85,18 @@ body{
 }
 .circle1 {
   height: 45px;
-  width: 45px;
-  position: relative;
-  left: 13rem;
-  top: 2.5rem;
-  background-color: #F0EB8D;
-  border-radius: 50%;
+    width: 45px;
+    position: relative;
+    left: 19rem;
+    top: 1.5rem;
+    background-color: #F0EB8D;
+    border-radius: 50%;
 }
 .circle2 {
   height: 56px;
   width: 56px;
   position: relative;
-  left: 20rem;
+  left: 25rem;
   top: 3.5rem;
   background-color: #5D9C59;
   border-radius: 50%;
@@ -105,8 +105,8 @@ body{
   height: 75px;
   width: 75px;
   position: relative;
-  left: 12rem;
-    bottom: 7rem;
+  left: 19rem;
+  bottom: 10rem;
   background-color: #DF2E38;
   border-radius: 50%;
 }
