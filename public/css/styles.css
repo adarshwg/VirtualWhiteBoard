@@ -1,7 +1,8 @@
 body{
-  background-color: #F9F5EB;
+  background-size: cover;
   font-family: cursive;
-  background: url("https://www.artnews.com/wp-content/uploads/2020/05/AdobeStock_243949649.jpeg");
+  background-image: url(/images/wb22.jpg);
+  background-size: 120%;
 }
 #title{
   font-size: 20px;
@@ -80,8 +81,7 @@ body{
   border-top: 15em solid transparent;
   border-left: 30em solid rgb(255, 222, 89);
   border-bottom: 16em solid transparent;
-  background-color: #F9F5EB;
-  background:url("poos")
+  background:none;
 }
 .circle1 {
   height: 45px;
