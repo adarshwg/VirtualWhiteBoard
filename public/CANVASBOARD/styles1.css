@@ -38,7 +38,23 @@ canvas:hover {
     cursor: url("pen.cur"), auto;
 }
 
-
+/* .rectangle {
+    float: left;
+     style="width:500px;height:100px;border:1px solid #000;" 
+    width: 100px;
+    height:500px;
+    border: 1px;
+   color: #66bfbf; 
+} */
+.rectangle {
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    width: 100px;
+    height: 500px;
+    border: 1px solid #000;
+    color: #66bfbf;
+}
 
 #tools {
     margin-top: 20px;
