@@ -70,27 +70,47 @@ app.get("/login",function(req,res){
 });
 
 app.post("/signup",async function(req,res){
-  bcrypt.hash(req.body.password, saltRounds, function(err, hash) {
+ 
     // Store hash in your password DB.
-    const newUser = new Board({
-      email: req.body.email,
-      password: hash
-    });
-    newUser.save().then(function(err){
-      if(err){
-        console.log(err)
+    try{
+      const foundUser =  Board.findOne({  email: req.body.email });
+      if(foundUser){
+        // alert("User Already exists!")
+        console.log("alert")
+        res.status(401).json({message: "InvalidUser already exist!"})
+        
+        
       }
       else{
-        
-        res.redirect("/home");
-        console.log("success")
-      }
-    })
-    console.log("saved")
+        bcrypt.hash(req.body.password, saltRounds, function(err, hash) {
+        const newUser = new Board({
+          email: req.body.email,
+          password: hash
+        });
+        newUser.save().then(function(err){
+          if(err){
+            console.log(err)
+          }
+          else{
+            
+            res.redirect("/login");
+            console.log("success")
+          }
+        })
+      });
+    }
+  }
+    catch(err){
+      console.log(err);
+      res.status(500).json({ message: "Server error" });
+    }
+    
+    
+    
 });
   
 // newUser.save(function(err){ // use .then
-});
+
 // app.post("/login", function(req,res){
 //   res.sendFile(__dirname + "/login.html");
 // })
