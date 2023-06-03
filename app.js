@@ -26,10 +26,10 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 mongoose.set('strictQuery', false);
-mongoose.connect("mongodb://localhost:27017/boardDB",{
+mongoose.connect("mongodb://0.0.0.0:27017/boardDB",{
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  family: 4,
+  // family: 4,
 });
 
 const boardSchema = new mongoose.Schema({
@@ -73,7 +73,7 @@ app.post("/signup",async function(req,res){
  
     // Store hash in your password DB.
     try{
-      const foundUser =  Board.findOne({  email: req.body.email });
+      const foundUser = await Board.findOne({  email: req.body.email });
       if(foundUser){
         // alert("User Already exists!")
         console.log("alert")
@@ -96,7 +96,7 @@ app.post("/signup",async function(req,res){
             res.redirect("/login");
             console.log("success")
           }
-        })
+        });
       });
     }
   }
@@ -104,7 +104,7 @@ app.post("/signup",async function(req,res){
       console.log(err);
       res.status(500).json({ message: "Server error" });
     }
-    
+
     
     
 });
