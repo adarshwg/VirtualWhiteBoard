@@ -87,16 +87,14 @@ app.post("/signup",async function(req,res){
           email: req.body.email,
           password: hash
         });
-        newUser.save().then(function(err){
-          if(err){
-            console.log(err)
-          }
-          else{
-            
-            res.redirect("/login");
-            console.log("success")
-          }
+        newUser.save().then(function(id){
+          console.log(id+"\nuser signup successful");
+          res.redirect("/login");
+          
+        }).catch(function (err){
+          console.log(err);
         });
+          
       });
     }
   }
