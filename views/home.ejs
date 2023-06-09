@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whiteboard Website</title>
+    <title>PitchIt</title>
     <link rel="stylesheet" href="CANVASBOARD\styles1.css">
     <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -16,12 +16,84 @@
         <h1>PitchIt</h1>
     </header>
     <main>
-        <canvas id="canvas" width="1200" height="6000"></canvas>
-        <div id="tools">
-            <label for="color">Pen color:</label>
-            <input type="color" id="color" value="#000000">
-            <button id="clear">Clear</button>
+        <div id="canvasContainer">
+            <div class="float-container" id="tools">
+                
+                <div id="boardTool">
+                    <input type="color" id="color" class="style1" value="#000000">
+                </div>
+                <div id="boardTool">
+                    <button id="pen"><img src="images/pencil.png" height="30px" width="30px" alt="pencil"></button>
+                </div>
+                
+                <div id="boardTool">
+                    <button id="clear"><img src="images/clear.png" height="30px" width="30px" alt="clear"></button>
+                </div>
+                
+                <div id="boardTool">
+                    <button id="eraser"><img src="images/eraser.png" height="30px" width="30px" alt="eraser"></button>
+                </div>
+                
+                <div id="boardTool">
+                    <button id="fill"><img src="images/fill.png" height="30px" width="30px" alt="fill"></button>
+                </div>
+            </div>
+            <div class="float-container1" id="tools">
+                
+                <div id="boardTool">
+                    <button class="circle" id="circle1"><img src="images/circle.png" height="5px" width="5px" alt="circle"></button>
+                </div>
+                
+                <div id="boardTool">
+                    <button class="circle" id="circle2"><img src="images/circle.png" height="20px" width="20px" alt="circle"></button>
+                </div>
+                
+                <div id="boardTool">
+                    <button class="circle" id="circle3"><img src="images/circle.png" height="40px" width="40px" alt="circle"></button>
+                </div>
+                
+                <div id="boardTool">
+                    <button class="circle" id="circle4"><img src="images/circle.png" height="50px" width="50px" alt="circle"></button>
+                </div>
+            </div>
+            <div class="float-child2">
+                <canvas id="canvas" width="1200" height="6000"></canvas>
+            </div>
         </div>
+        <!-- <div class="float-container" id="tools">
+            <div class="float-child1">
+                <div id="boardTool">
+                    <label for="color">Pen color:</label>
+                </div>
+                
+                <div id="boardTool">
+                    <input type="color" id="color" value="#000000">
+                </div>
+                
+                <div id="boardTool">
+                    <button id="pen">Pen</button>
+                </div>
+                
+                <div id="boardTool">
+                    <button id="clear">Clear</button>
+                </div>
+                
+                <div id="boardTool">
+                    <button id="eraser">Eraser</button>
+                </div>
+                
+                <div id="boardTool">
+                    <button id="fill">Fill</button>
+                </div>
+            </div>
+            <div class="float-child2">
+                <canvas id="canvas" width="1200" height="6000"></canvas>
+            </div>
+            
+            
+        </div> -->
+        
+        
         
     </main>
     <script src="CANVASBOARD/serve.js"></script>

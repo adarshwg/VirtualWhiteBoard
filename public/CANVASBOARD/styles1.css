@@ -5,15 +5,18 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-image: "CANVASBOARD/images/imgg2.jpg";
+    font-family: cursive;
+    background-color: #66bfbf;
 }
 
 header {
-    background-color: #222;
+    background-color: #66bfbf;
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+#canvasContainer {
+    position: relative;
 }
 
 main {
@@ -25,17 +28,14 @@ main {
 }
 
 canvas {
+    z-index: 1;
     border: 1px solid #ccc;
     background-color: #fff;
     max-width: 100%;
     max-height: 100%;
     width: auto;
     height: auto;
-    cursor: pointer;
-}
-
-canvas:hover {
-    cursor: url("pen.cur"), auto;
+    cursor: crosshair;
 }
 
 /* .rectangle {
@@ -46,7 +46,7 @@ canvas:hover {
     border: 1px;
    color: #66bfbf; 
 } */
-.rectangle {
+/* .rectangle {
     position: fixed;
     top: 5rem;
     left: 0;
@@ -54,26 +54,63 @@ canvas:hover {
     height: 500px;
     border: 1px solid #000;
     color: #66bfbf;
-}
+} */
 
 #tools {
-    display: block;
-    margin-top: 20px;
+    /* padding: 10px 0; */
+    /* align-items: center; */
+    /* display: block; */
 }
+#boardTool{
+    margin-left: 0px;
+    display:flex;
+    border-right: 0px;
+}
+.float-container {
+    background-color: #FD841F;
+    margin-left: -130px;
+    position: absolute;
+    border: 3px solid #fff;
+    padding: 20px;
+}
+#color {
+    border-radius: 100%;
+    appearance: none;
+    width: 65px;
+    height: 65px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.float-container1 {
+    background-color: #FD841F;
+    margin-left: 1220px;
+    position: absolute;
+    border: 3px solid #fff;
+    padding: 20px;
+}  
 
 label {
     margin-right: 10px;
 }
 
 button {
-    background-color: #4CAF50;
+    border-radius: 100%;
+    font-family: cursive;
     border: none;
-    color: white;
-    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    padding: 15px 15px;
+    margin: 6px 2px;
     cursor: pointer;
+}
+
+.circle {
+    margin-top: 20px;
+    margin-right: 0px;
+    padding: 20px;
 }
