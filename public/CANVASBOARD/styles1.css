@@ -56,11 +56,6 @@ canvas {
     color: #66bfbf;
 } */
 
-#tools {
-    /* padding: 10px 0; */
-    /* align-items: center; */
-    /* display: block; */
-}
 #boardTool{
     margin-left: 0px;
     display:flex;

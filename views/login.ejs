@@ -32,6 +32,9 @@
   <div class="right-container">
     <div class="signincontainer">
       <form action="/login" method="POST">
+        <% if (message) { %>
+          <p class="existingUser"><%= message %></p>
+          <% } %>
         <label name="email" class="sign1 sign">Email Address*</label>
         <input type="email" class="sign2 sign" name="email" id="email" placeholder="Enter email address" >
         <label name="password" class="sign3 sign">Password*</label>
