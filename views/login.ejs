@@ -32,7 +32,8 @@
   <div class="right-container">
     <div class="signincontainer">
       <form action="/login" method="POST">
-        <% if (message) { %>
+        <!-- to check that the message is not undefined... i.e. it is being passed or not -->
+        <% if (typeof message !== 'undefined') { %>
           <p class="existingUser"><%= message %></p>
           <% } %>
         <label name="email" class="sign1 sign">Email Address*</label>
