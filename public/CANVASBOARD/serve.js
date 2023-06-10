@@ -1,6 +1,6 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
-let isDrawing = false;
+let isDrawing = true;
 let lastX = 0;
 let lastY = 0;
 let isErasing=false;    

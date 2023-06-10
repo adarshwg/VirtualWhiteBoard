@@ -75,11 +75,7 @@ app.post("/signup",async function(req,res){
     try{
       const foundUser = await Board.findOne({  email: req.body.email });
       if(foundUser){
-        // alert("User Already exists!")
-        res.render("login", { message: "User already exists! Please log in." });
-        // res.status(401).json({message: "InvalidUser already exist!"})
-        
-        
+        res.render("login", { message: "User already exists! Please log in." });   
       }
       else{
         bcrypt.hash(req.body.password, saltRounds, function(err, hash) {
