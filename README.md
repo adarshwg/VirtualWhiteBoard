@@ -19,3 +19,5 @@ We wish to improve the User Interface and update our designs and the working of 
 [Adarsh Singh](https://github.com/Adarsh9306)  
 [Priyanshu Sutar](https://github.com/priyanshusutar1102)  
 [Subham Kumar Sharma](https://github.com/2subham5)  
+
+Enjoy whiteboarding! 
